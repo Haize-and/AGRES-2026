@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | AGRES 2026</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#064E3B',
+                        secondary: '#D97706',
+                        accent: '#F59E0B',
+                        light: '#ECFDF5',
+                        dark: '#111827',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        heading: ['Playfair Display', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body class="font-sans text-gray-800 antialiased selection:bg-primary selection:text-white bg-gray-50">
+
+    <!-- Navigation (Same as Index) -->
+    <nav id="navbar" class="fixed w-full z-50 transition-all duration-300 py-4 top-0 bg-primary shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center space-x-3">
+                    <div
+                        class="w-10 h-10 bg-white rounded-full flex items-center justify-center text-primary text-xl font-bold shadow-lg">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-white/80 hover:text-white transition font-medium">Home</a>
+                    <a href="about.html"
+                        class="text-white hover:text-accent transition font-medium border-b-2 border-accent">About</a>
+                    <a href="committee.html" class="text-white/80 hover:text-white transition font-medium">Committee</a>
+                    <a href="contact.html" class="text-white/80 hover:text-white transition font-medium">Contact</a>
+                    <a href="index.html#register"
+                        class="bg-secondary hover:bg-yellow-600 text-white px-6 py-2 rounded-full font-semibold transition shadow-md">Register</a>
+                </div>
+                <button id="mobile-menu-btn" class="md:hidden text-white text-2xl focus:outline-none"><i
+                        class="fas fa-bars"></i></button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="relative pt-32 pb-20 bg-primary to-emerald-800 text-white overflow-hidden">
+        <div
+            class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1541339907198-e08756dedf3f?q=80&w=2070&auto=format&fit=crop')] opacity-20 bg-cover bg-center">
+        </div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+            <h1 class="text-4xl md:text-6xl font-heading font-bold mb-6 animate-on-scroll">About The Faculty</h1>
+            <div class="w-24 h-1 bg-secondary mx-auto rounded-full"></div>
+            <p class="mt-6 text-lg text-emerald-100 max-w-2xl mx-auto">Nurturing Excellence in Agricultural Sciences
+                Since 1999</p>
+        </div>
+    </header>
+
+    <!-- Content Sections -->
+    <section class="py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                <div class="space-y-6 animate-on-scroll">
+                    <h2 class="text-3xl font-heading font-bold text-gray-900">A Tradition of <span
+                            class="text-primary">Innovation</span></h2>
+                    <p class="text-gray-600 leading-relaxed">
+                        The Faculty of Agriculture at Wayamba University of Sri Lanka stands as a beacon of agricultural
+                        education and research. Located in the heart of the agrarian landscape in Makandura, we are
+                        dedicated to advancing the frontiers of agricultural science through rigorous academic programs
+                        and impactful research.
+                    </p>
+                    <p class="text-gray-600 leading-relaxed">
+                        Our symposium, AGRES, provides a vital platform for our undergraduates to present their
+                        findings, fostering a culture of scientific inquiry and critical thinking essential for future
+                        leaders in the sector.
+                    </p>
+
+                    <div class="grid grid-cols-2 gap-6 mt-8">
+                        <div class="p-6 bg-white rounded-xl shadow-md border hover:border-primary transition group">
+                            <i
+                                class="fas fa-globe-asia text-3xl text-primary mb-3 group-hover:scale-110 transition duration-300"></i>
+                            <h3 class="font-bold text-lg">Global Impact</h3>
+                            <p class="text-sm text-gray-500 mt-2">Research addressing international challenges.</p>
+                        </div>
+                        <div class="p-6 bg-white rounded-xl shadow-md border hover:border-primary transition group">
+                            <i
+                                class="fas fa-users text-3xl text-primary mb-3 group-hover:scale-110 transition duration-300"></i>
+                            <h3 class="font-bold text-lg">Community Focus</h3>
+                            <p class="text-sm text-gray-500 mt-2">Solutions for local farming communities.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="relative animate-on-scroll translate-y-10 opacity-0 transition duration-1000 delay-200">
+                    <div class="absolute -top-4 -left-4 w-full h-full bg-secondary/20 rounded-2xl"></div>
+                    <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?q=80&w=2070&auto=format&fit=crop"
+                        class="relative rounded-2xl shadow-xl w-full object-cover h-[500px]" alt="Campus Life">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission & Vision -->
+    <section class="py-20 bg-primary/5 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div
+                    class="bg-white p-10 rounded-2xl shadow-sm border-t-4 border-primary hover:shadow-xl transition animate-on-scroll">
+                    <div
+                        class="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center text-primary text-2xl mb-6">
+                        <i class="fas fa-bullseye"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold font-heading mb-4 text-gray-900">Our Mission</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        To produce high-quality graduates with knowledge, skills, and attitudes to meet the challenges
+                        in the agriculture sector through teaching, research, and outreach activities for national
+                        development.
+                    </p>
+                </div>
+
+                <div
+                    class="bg-white p-10 rounded-2xl shadow-sm border-t-4 border-secondary hover:shadow-xl transition animate-on-scroll delay-100">
+                    <div
+                        class="w-14 h-14 bg-secondary/10 rounded-full flex items-center justify-center text-secondary text-2xl mb-6">
+                        <i class="fas fa-eye"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold font-heading mb-4 text-gray-900">Our Vision</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        To be a center of excellence in agriculture education and research, contributing to sustainable
+                        development and food security locally and globally.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white pt-10 pb-6">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <p>&copy; 2026 Faculty of Agriculture, Wayamba University of Sri Lanka.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

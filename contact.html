@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | AGRES 2026</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#064E3B',
+                        secondary: '#D97706',
+                        accent: '#F59E0B',
+                        light: '#ECFDF5',
+                        dark: '#111827',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        heading: ['Playfair Display', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .map-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+        }
+
+        .map-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+    </style>
+</head>
+
+<body class="font-sans text-gray-800 antialiased selection:bg-primary selection:text-white bg-gray-50">
+
+    <!-- Navigation -->
+    <nav id="navbar" class="fixed w-full z-50 transition-all duration-300 py-4 top-0 bg-primary shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center space-x-3">
+                    <div
+                        class="w-10 h-10 bg-white rounded-full flex items-center justify-center text-primary text-xl font-bold shadow-lg">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                </div>
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-white/80 hover:text-white transition font-medium">Home</a>
+                    <a href="about.html" class="text-white/80 hover:text-white transition font-medium">About</a>
+                    <a href="committee.html" class="text-white/80 hover:text-white transition font-medium">Committee</a>
+                    <a href="contact.html"
+                        class="text-white hover:text-accent transition font-medium border-b-2 border-accent">Contact</a>
+                    <a href="index.html#register"
+                        class="bg-secondary hover:bg-yellow-600 text-white px-6 py-2 rounded-full font-semibold transition shadow-md">Register</a>
+                </div>
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="md:hidden text-white text-2xl focus:outline-none"><i
+                        class="fas fa-bars"></i></button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="pt-32 pb-16 bg-gradient-to-br from-gray-900 to-primary text-white text-center">
+        <h1 class="text-4xl md:text-5xl font-heading font-bold mb-4">Get in Touch</h1>
+        <p class="text-lg text-emerald-100 max-w-2xl mx-auto px-4">Have questions? We're here to help.</p>
+    </header>
+
+    <!-- Contact Form & Info -->
+    <section class="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
+
+            <!-- Contact Info -->
+            <div class="space-y-10 animate-on-scroll">
+                <div>
+                    <h2 class="text-2xl font-bold font-heading text-gray-900 mb-6">Contact Information</h2>
+                    <p class="text-gray-600 mb-8">
+                        Feel free to reach out to the organizing committee for any inquiries regarding abstract
+                        submission, registration, or sponsorship.
+                    </p>
+
+                    <div class="space-y-6">
+                        <div class="flex items-start gap-4">
+                            <div
+                                class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center text-primary text-xl shrink-0">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-900">Address</h4>
+                                <p class="text-gray-600 text-sm">Faculty of Agriculture,<br>Wayamba University of Sri
+                                    Lanka,<br>Makandura, Gonawila (NWP).</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div
+                                class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center text-primary text-xl shrink-0">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-900">Phone</h4>
+                                <p class="text-gray-600 text-sm">+94 37 228 1234</p>
+                                <p class="text-gray-600 text-sm">+94 37 228 5678</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div
+                                class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center text-primary text-xl shrink-0">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-900">Email</h4>
+                                <p class="text-gray-600 text-sm">agres2026@wyb.ac.lk</p>
+                                <p class="text-gray-600 text-sm">info@agres.lk</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Map -->
+                <div class="rounded-2xl overflow-hidden shadow-lg border border-gray-200 h-64 relative">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15822.428456645398!2d79.98822985!3d7.3360662!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae2e361257404e9%3A0x959714c520e2a3c7!2sWayamba%20University%20of%20Sri%20Lanka%20-%20Makandura%20Premises!5e0!3m2!1sen!2slk!4v1659585641234!5m2!1sen!2slk"
+                        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+
+            <!-- Contact Form -->
+            <div class="bg-white p-8 md:p-10 rounded-3xl shadow-xl border border-gray-100 animate-on-scroll delay-100">
+                <h2 class="text-2xl font-bold font-heading text-gray-900 mb-6">Send us a Message</h2>
+                <form class="space-y-6">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="space-y-2">
+                            <label class="text-sm font-medium text-gray-700">First Name</label>
+                            <input type="text"
+                                class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition"
+                                placeholder="John">
+                        </div>
+                        <div class="space-y-2">
+                            <label class="text-sm font-medium text-gray-700">Last Name</label>
+                            <input type="text"
+                                class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition"
+                                placeholder="Doe">
+                        </div>
+                    </div>
+
+                    <div class="space-y-2">
+                        <label class="text-sm font-medium text-gray-700">Email Address</label>
+                        <input type="email"
+                            class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition"
+                            placeholder="john@example.com">
+                    </div>
+
+                    <div class="space-y-2">
+                        <label class="text-sm font-medium text-gray-700">Subject</label>
+                        <select
+                            class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition bg-white">
+                            <option>General Inquiry</option>
+                            <option>Registration Issue</option>
+                            <option>Abstract Submission</option>
+                            <option>Sponsorship</option>
+                        </select>
+                    </div>
+
+                    <div class="space-y-2">
+                        <label class="text-sm font-medium text-gray-700">Message</label>
+                        <textarea rows="4"
+                            class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition"
+                            placeholder="How can we help you?"></textarea>
+                    </div>
+
+                    <button type="submit"
+                        class="w-full py-4 bg-primary text-white font-bold rounded-xl hover:bg-emerald-800 transition transform hover:scale-[1.02] shadow-lg">
+                        Send Message
+                    </button>
+                </form>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white pt-10 pb-6 mt-12">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <p>&copy; 2026 Faculty of Agriculture, Wayamba University of Sri Lanka.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

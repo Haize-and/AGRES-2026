@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organizing Committee | AGRES 2026</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#064E3B',
+                        secondary: '#D97706',
+                        accent: '#F59E0B',
+                        light: '#ECFDF5',
+                        dark: '#111827',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        heading: ['Playfair Display', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        .card-bg {
+            background: linear-gradient(135deg, rgba(255, 255, 255, 1) 0%, rgba(243, 244, 246, 1) 100%);
+        }
+
+        .profile-img {
+            transition: all 0.5s ease;
+        }
+
+        .group:hover .profile-img {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+
+<body class="font-sans text-gray-800 antialiased selection:bg-primary selection:text-white bg-gray-50">
+
+    <!-- Navigation -->
+    <nav id="navbar" class="fixed w-full z-50 transition-all duration-300 py-4 top-0 bg-primary shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center space-x-3">
+                    <div
+                        class="w-10 h-10 bg-white rounded-full flex items-center justify-center text-primary text-xl font-bold shadow-lg">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-white/80 hover:text-white transition font-medium">Home</a>
+                    <a href="about.html" class="text-white/80 hover:text-white transition font-medium">About</a>
+                    <a href="committee.html"
+                        class="text-white hover:text-accent transition font-medium border-b-2 border-accent">Committee</a>
+                    <a href="contact.html" class="text-white/80 hover:text-white transition font-medium">Contact</a>
+                    <a href="index.html#register"
+                        class="bg-secondary hover:bg-yellow-600 text-white px-6 py-2 rounded-full font-semibold transition shadow-md">Register</a>
+                </div>
+                <button id="mobile-menu-btn" class="md:hidden text-white text-2xl focus:outline-none"><i
+                        class="fas fa-bars"></i></button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="pt-32 pb-16 bg-gradient-to-br from-primary to-emerald-900 text-white text-center">
+        <h1 class="text-4xl md:text-5xl font-heading font-bold mb-4">Meet Our Team</h1>
+        <p class="text-lg text-emerald-100 max-w-2xl mx-auto px-4">The dedicated individuals working behind the scenes
+            to make AGRES 2026 a success.</p>
+    </header>
+
+    <!-- Committee Grid -->
+    <section class="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+
+        <!-- Chairperson -->
+        <div class="flex justify-center mb-16 animate-on-scroll">
+            <div
+                class="group relative w-full max-w-sm bg-white rounded-2xl shadow-xl overflow-hidden hover:shadow-2xl transition duration-300">
+                <div class="h-80 overflow-hidden relative">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent z-10"></div>
+                    <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=1974&auto=format&fit=crop"
+                        alt="Chairperson" class="w-full h-full object-cover profile-img">
+                    <div class="absolute bottom-6 left-6 z-20 text-white">
+                        <h3 class="text-2xl font-bold font-heading">Dr. John Doe</h3>
+                        <p class="text-secondary font-medium uppercase tracking-wider text-sm">Chairperson</p>
+                    </div>
+                </div>
+                <div class="p-6">
+                    <p class="text-gray-600 text-sm mb-4">Leading the symposium with a vision for academic excellence
+                        and innovation in agriculture.</p>
+                    <div class="flex space-x-3">
+                        <a href="#"
+                            class="w-8 h-8 rounded-full bg-gray-100 flex items-center justify-center text-gray-500 hover:bg-primary hover:text-white transition"><i
+                                class="fab fa-linkedin-in"></i></a>
+                        <a href="#"
+                            class="w-8 h-8 rounded-full bg-gray-100 flex items-center justify-center text-gray-500 hover:bg-primary hover:text-white transition"><i
+                                class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Members Grid -->
+        <h2 class="text-3xl font-heading font-bold text-center mb-12 text-gray-800">Organizing Committee</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Member 1 -->
+            <div
+                class="group bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition duration-300 animate-on-scroll delay-100">
+                <div class="h-64 overflow-hidden relative">
+                    <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=1976&auto=format&fit=crop"
+                        class="w-full h-full object-cover profile-img" alt="Secretary">
+                    <div class="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition duration-300"></div>
+                </div>
+                <div class="p-6 text-center">
+                    <h3 class="text-xl font-bold text-gray-900 mb-1">Ms. Jane Smith</h3>
+                    <p class="text-primary font-medium text-sm mb-3">Secretary</p>
+                    <p class="text-gray-500 text-sm">Ensuring smooth communication and coordination.</p>
+                </div>
+            </div>
+
+            <!-- Member 2 -->
+            <div
+                class="group bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition duration-300 animate-on-scroll delay-200">
+                <div class="h-64 overflow-hidden relative">
+                    <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=1974&auto=format&fit=crop"
+                        class="w-full h-full object-cover profile-img" alt="Treasurer">
+                    <div class="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition duration-300"></div>
+                </div>
+                <div class="p-6 text-center">
+                    <h3 class="text-xl font-bold text-gray-900 mb-1">Mr. David Wilson</h3>
+                    <p class="text-primary font-medium text-sm mb-3">Treasurer</p>
+                    <p class="text-gray-500 text-sm">Managing finances with integrity and precision.</p>
+                </div>
+            </div>
+
+            <!-- Member 3 -->
+            <div
+                class="group bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition duration-300 animate-on-scroll delay-300">
+                <div class="h-64 overflow-hidden relative">
+                    <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=1961&auto=format&fit=crop"
+                        class="w-full h-full object-cover profile-img" alt="Coordinator">
+                    <div class="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition duration-300"></div>
+                </div>
+                <div class="p-6 text-center">
+                    <h3 class="text-xl font-bold text-gray-900 mb-1">Dr. Emily Chen</h3>
+                    <p class="text-primary font-medium text-sm mb-3">Coordinator</p>
+                    <p class="text-gray-500 text-sm">Overseeing logistical arrangements and scheduling.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white pt-10 pb-6 mt-12">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <p>&copy; 2026 Faculty of Agriculture, Wayamba University of Sri Lanka.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
